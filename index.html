@@ -1,194 +1,87 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taste Catering</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff6eb;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(135deg, #f7971e, #ffd200);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3.2em;
-      text-shadow: 1px 1px 3px #aa5f00;
-    }
-
-    nav {
-      background: #ffb347;
-      padding: 15px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #f28500;
-      border-bottom: 3px solid #ffcc70;
-      padding-bottom: 8px;
-      margin-bottom: 25px;
-    }
-
-    .menu-item {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 30px;
-      align-items: center;
-      background: white;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .menu-item img {
-      width: 150px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .menu-item div {
-      flex: 1;
-    }
-
-    .price {
-      font-weight: bold;
-      color: #c25500;
-      font-size: 1.1em;
-    }
-
-    footer {
-      background: #f28500;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 50px;
-    }
-
-    ul {
-      list-style: square;
-      margin-left: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header>
-  <h1>Taste Catering</h1>
-  <p>Smak från hjärtat • Flavor from the Heart • Dhadhan ka yimid qalbiga</p>
-</header>
-
-<nav>
-  <a href="#menu">Menu</a>
-  <a href="#catering">Catering</a>
-  <a href="#desserts">Desserts</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="menu">
-  <h2>Menu / Meny / Liiska Cuntada</h2>
-
-  <div class="menu-item">
-    <img src="IMG_7891.jpeg" alt="Sambusas">
-    <div>
-      <h3>Sambus / Sambusas / Samosas</h3>
-      <p class="price">20 kr per styck</p>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Taste Catering</h1>
+      <p>Smak från hjärtat • Flavor from the Heart • Dhadhan ka yimid qalbiga</p>
+      <a href="#menu" class="btn">See Menu</a>
     </div>
-  </div>
+    <button id="themeToggle">🌙</button>
+  </header>
 
-  <div class="menu-item">
-    <img src="IMG_7892.jpeg" alt="Sabaayad">
-    <div>
-      <h3>Sabaayad iyo suqar / Stekt bröd med köttgryta</h3>
-      <p class="price">100 kr</p>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#catering">Catering</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Menu / Meny / Liiska Cuntada</h2>
+
+    <div class="menu-item">
+      <img src="images/IMG_7891.jpeg" alt="Sambusas" />
+      <div>
+        <h3>Sambus / Sambusas / Samosas</h3>
+        <p class="price">20 kr per styck</p>
+      </div>
     </div>
-  </div>
 
-  <div class="menu-item">
-    <img src="IMG_7901.jpeg" alt="Mixed dishes">
-    <div>
-      <h3>Special Combo / Sambus, Sabaayad, Suqar</h3>
-      <p class="price">180 kr</p>
+    <div class="menu-item">
+      <img src="images/IMG_7892.jpeg" alt="Sabaayad" />
+      <div>
+        <h3>Sabaayad iyo suqar / Stekt bröd med köttgryta</h3>
+        <p class="price">100 kr</p>
+      </div>
     </div>
-  </div>
 
-  <div class="menu-item">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Somali_rice.jpg/640px-Somali_rice.jpg" alt="Baris iyo hilib">
-    <div>
-      <h3>Baris iyo hilib / Ris med kött / Rice with meat</h3>
-      <p class="price">150 kr</p>
+    <div class="menu-item">
+      <img src="images/IMG_7901.jpeg" alt="Mixed dishes" />
+      <div>
+        <h3>Special Combo / Sambus, Sabaayad, Suqar</h3>
+        <p class="price">180 kr</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="menu-item">
-    <img src="https://www.eatwellabi.com/wp-content/uploads/2021/10/Jollof-rice-with-chicken-10.jpg" alt="Ris med kyckling/lax">
-    <div>
-      <h3>Ris med kyckling/lax / Bariis iyo digaag/kaluun</h3>
-      <p class="price">150 kr</p>
-    </div>
-  </div>
+  <section id="catering">
+    <h2>Catering Services / Adeegyada / Tjänster</h2>
+    <ul>
+      <li>Bröllop & högtider / Aroos & munaasabado</li>
+      <li>Familjeträffar & kalas / Kulammo qoyska & xaflado</li>
+      <li>Företagsarrangemang / Xafladaha shirkadaha</li>
+      <li>Födelsedagsfirande / Dabaaldegyada dhalashada</li>
+    </ul>
+  </section>
 
-  <div class="menu-item">
-    <img src="https://www.seriouseats.com/thmb/Otn59pH8Pfl8L5iSICuafUSjCsk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230607-Pasta-Bolognese-Jessica-Gavin-hero-c1e64f720c3b4264bfb9f229d36fc0b4.jpg" alt="Pasta">
-    <div>
-      <h3>Baasto iyo suugo / Pasta med köttfärssås</h3>
-      <p class="price">120 kr</p>
-    </div>
-  </div>
-</section>
+  <section id="desserts">
+    <h2>Desserts / Macmacaanka / Efterrätter</h2>
+    <ul>
+      <li>Sambus – 20 kr</li>
+      <li>Bur – 10 kr</li>
+      <li>Bajiyo – 10 kr</li>
+      <li>Malawax – 5 kr</li>
+    </ul>
+  </section>
 
-<section id="catering">
-  <h2>Catering Services / Adeegyada / Tjänster</h2>
-  <ul>
-    <li>Bröllop & högtider / Aroos & munaasabado</li>
-    <li>Familjeträffar & kalas / Kulammo qoyska & xaflado</li>
-    <li>Företagsarrangemang / Xafladaha shirkadaha</li>
-    <li>Födelsedagsfirande / Dabaaldegyada dhalashada</li>
-  </ul>
-</section>
+  <section id="contact">
+    <h2>Contact / Kontakt / Xiriir</h2>
+    <p><strong>Telefon:</strong> 0793449937</p>
+    <p>Endast hemleverans – maten direkt till din dörr / Home delivery only – food to your door</p>
+    <a href="https://wa.me/46793449937" target="_blank" class="btn whatsapp-btn">📞 Beställ på WhatsApp</a>
+  </section>
 
-<section id="desserts">
-  <h2>Desserts / Macmacaanka / Efterrätter</h2>
-  <ul>
-    <li>Sambus – 20 kr</li>
-    <li>Bur – 10 kr</li>
-    <li>Bajiyo – 10 kr</li>
-    <li>Malawax – 5 kr</li>
-  </ul>
-</section>
+  <footer>
+    <p>© 2025 Taste Catering</p>
+  </footer>
 
-<section id="contact">
-  <h2>Contact / Kontakt / Xiriir</h2>
-  <p><strong>Telefon:</strong> 0793449937</p>
-  <p>Endast hemleverans – maten direkt till din dörr / Home delivery only – food to your door</p>
-</section>
-
-<footer>
-  <p>© 2025 Taste Catering</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
